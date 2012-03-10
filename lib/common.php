@@ -8,7 +8,7 @@ error_reporting(E_ALL | E_STRICT);
 //ini_set('error_log', 'log/phperror.txt');
 
 // set time zone to use date/time function without warnings
-date_default_timezone_set('America/New_York');
+date_default_timezone_set('PRC');
 
 // compensate for magic quotes if necessary
 if (get_magic_quotes_gpc())

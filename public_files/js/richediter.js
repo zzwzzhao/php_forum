@@ -1,0 +1,3 @@
+tinyMCE.int({
+    mode:"textareas"
+});

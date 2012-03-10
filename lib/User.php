@@ -1,7 +1,8 @@
 <?php
 class User
 {
-        //Permission levels
+    //Permission levels
+        const DELETE_USER = 1;
         const CREATE_FORUM = 2;
 	const MOVE_MESSAGE = 4;
 	const DELETE_MESSAGE = 8;

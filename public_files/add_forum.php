@@ -10,7 +10,7 @@ require_once('401.php');
 
 //user must have appropriate permission to use the page
 $user = User::getById($_SESSION['userId']);
-if (~$user->permission & User::CREATE_FORUM) {
+if (!($user->permission & User::CREATE_FORUM)) {
     die('<p> Sorry, you do not have sufficient privileges to create new ' .
 	'forums.</p>');
 }
@@ -44,14 +44,14 @@ if (isset($message)) {
 <form action="<?php htmlspecialchars($_SERVER['PHP_SELF']); ?>"
 method="post">
 <div>
-<label for="forum_name"> Forum Name: </label>
+<label for="forum_name"> °å¿éÃû³Æ: </label>
 <input type="text" name="forum_name" id="forum_name"
 value="<?php echo htmlspecialchars($forum_name); ?>" /><br />
-<label for="forum_desc"> Description: </label>
+<label for="forum_desc"> °å¿éÃèÊö: </label>
 <input type="input" name="forum_desc" id="forum_desc"
 value="<?php echo htmlspecialchars($forum_desc); ?>" /><br />
 <input type="hidden" name="submitted" value="true" />
-<input type="submit" value="Create" />
+<input type="submit" value="´´½¨" />
 </div>
 </form>
 <?php

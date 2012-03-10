@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=gb2312" />
     <title>
 <?php
 if (!empty($GLOBALS['TEMPLATE']['title'])) {
@@ -24,6 +25,13 @@ if (!empty($GLOBALS['TEMPLATE']['title'])) {
 }
 ?>
   </div>
+  <div id="nav">
+<?php
+if (!empty($GLOBALS['TEMPLATE']['nav'])) {
+    echo $GLOBALS['TEMPLATE']['nav'];
+}
+?>
+  </div>
   <div id="content">
 <?php
 if (!empty($GLOBALS['TEMPLATE']['content'])) {
@@ -31,7 +39,7 @@ if (!empty($GLOBALS['TEMPLATE']['content'])) {
 }
 ?>
   </div>
-  <div id="footer"> Copyright &copy; <?php echo date('Y'); ?></div>
+  <div id="footer"><p> Copyright &copy; <?php echo date('Y'); ?></P></div>
 </div>
 </body>
 </html>

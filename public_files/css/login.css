@@ -1,7 +1,7 @@
 #content {
     position:absolute;
     top:45%;
-    left:35%;
+    left:40%;
 }
 body {
 background-color:rgb(114,111,242);
@@ -18,7 +18,48 @@ background-color:rgb(114,111,242);
 td {
 	padding:5px;
 	text-align:right;
+	border:0;
 }
+table {
+    border:0;
+    padding:0;
+    margin:0;
+}
+input[type="password"] {
+    border:0;
+}
+tbody, th, tr {
+    border:0;
+}
+thead{
+    border:0;
+}
+table {
+	border-bottom: 0;
+}
+
+caption {
+	font-weight: bold;
+	padding-bottom: 0.643em; /* 9px */
+	font-size:1.077em; /* 14px */
+}
+
+thead th {
+	border:0;
+	padding-top: 0;
+	padding-bottom: 0.692em; /* 9px */
+}
+
+tbody {
+	border-top: 0;	/* not rendered in IE6/7 */
+}
+
+tbody tr th, tbody tr td {
+	border-top: 0;
+}
+
+
+
 /*#wrap {
 
 
